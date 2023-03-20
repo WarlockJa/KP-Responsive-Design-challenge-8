@@ -1,0 +1,54 @@
+@use '../media.scss';
+
+.footer {
+    background-color: var(--clr-dark);
+
+    .section-wrapper {
+
+        h2 {
+            color: var(--clr-white);
+            font-size: 3rem;
+            text-align: center;
+            padding: 1em;
+        }
+    
+        .container {
+            padding: 0 5%;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+    
+            .container__tile {
+    
+                h3 {
+                    color: var(--clr-beige);
+                    font-size: 1.5rem;
+                }
+    
+                p,
+                ul > li > p {
+                    color: var(--clr-grey);
+                }
+            }
+        }
+    }
+}
+
+@include media.min-width(large) {
+    .footer {
+        .section-wrapper {
+            .container {
+                flex-wrap: nowrap;
+                
+                .container__tile {
+                    min-width: 20%;
+                    flex-grow: 0.5;
+                }
+    
+                .flex-2grow {
+                    flex-grow: 1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,23 @@
+.section-wrapper {
+    width: 100%;
+    max-width: var(--sz-maxWidth);
+    margin: 0 auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+.container__tile {
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+}
+
+.button {
+    background-color: var(--clr-beige);
+    padding: 0.2em 1em;
+    border-radius: 30px;
+    text-transform: uppercase;
+}

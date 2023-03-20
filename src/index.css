@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Oswald:wght@700&display=swap');
+
+:root {
+  color-scheme: light dark;
+  --clr-darkest: #2E323F;
+  --clr-dark: #3B4050;
+  --clr-grey: #6F737F;
+  --clr-lightgrey: rgb(241, 240, 240);
+  --clr-white: #FFFFFF;
+  --clr-beige: #A59678;
+
+  --sz-maxWidth: 1200px;
+  --sz-headerHeight: 50px;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+*, *::after, *::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: 'Oswald', sans-serif;
+}
+
+h1, h2, h3 {
+  margin: 0;
+}
+
+p {
+  font-family: 'Montserrat', sans-serif;
+}
+
+button {
+  background: transparent;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-radius: 8px;
+  font-family: 'Oswald', sans-serif;
+
+  transition: border 200ms linear;
+}
+
+button:hover, button:focus {
+  border: 1px solid var(--clr-grey);
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+@media (prefers-color-scheme: light) {
+
+}
